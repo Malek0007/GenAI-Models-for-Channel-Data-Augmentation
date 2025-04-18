@@ -1,0 +1,134 @@
+[
+    {
+        "latitude": 50.61190167,
+        "longitude": 3.14397,
+        "altitude": 76.4,
+        "timestamp": "2022-10-06T14:25:51Z"
+    },
+    {
+        "latitude": 50.61194167,
+        "longitude": 3.14376167,
+        "altitude": 76.3,
+        "timestamp": "2022-10-06T14:25:53Z"
+    },
+    {
+        "latitude": 50.61195667,
+        "longitude": 3.14356167,
+        "altitude": 76.3,
+        "timestamp": "2022-10-06T14:25:55Z"
+    },
+    {
+        "latitude": 50.61196833,
+        "longitude": 3.14336833,
+        "altitude": 75.6,
+        "timestamp": "2022-10-06T14:25:57Z"
+    },
+    {
+        "latitude": 50.61199667,
+        "longitude": 3.14317667,
+        "altitude": 76.2,
+        "timestamp": "2022-10-06T14:25:59Z"
+    },
+    {
+        "latitude": 50.61200833,
+        "longitude": 3.14300833,
+        "altitude": 75.8,
+        "timestamp": "2022-10-06T14:26:01Z"
+    },
+    {
+        "latitude": 50.61201667,
+        "longitude": 3.14283833,
+        "altitude": 76.0,
+        "timestamp": "2022-10-06T14:26:03Z"
+    },
+    {
+        "latitude": 50.61202667,
+        "longitude": 3.14267,
+        "altitude": 76.8,
+        "timestamp": "2022-10-06T14:26:05Z"
+    },
+    {
+        "latitude": 50.612055,
+        "longitude": 3.14251,
+        "altitude": 76.2,
+        "timestamp": "2022-10-06T14:26:07Z"
+    },
+    {
+        "latitude": 50.61208167,
+        "longitude": 3.14236333,
+        "altitude": 75.1,
+        "timestamp": "2022-10-06T14:26:09Z"
+    },
+    {
+        "latitude": 50.61215667,
+        "longitude": 3.14225,
+        "altitude": 76.8,
+        "timestamp": "2022-10-06T14:26:12Z"
+    },
+    {
+        "latitude": 50.61229333,
+        "longitude": 3.14227,
+        "altitude": 77.4,
+        "timestamp": "2022-10-06T14:26:15Z"
+    },
+    {
+        "latitude": 50.61238333,
+        "longitude": 3.142285,
+        "altitude": 78.5,
+        "timestamp": "2022-10-06T14:26:17Z"
+    },
+    {
+        "latitude": 50.61248,
+        "longitude": 3.14228667,
+        "altitude": 79.1,
+        "timestamp": "2022-10-06T14:26:20Z"
+    },
+    {
+        "latitude": 50.61259167,
+        "longitude": 3.14237667,
+        "altitude": 79.0,
+        "timestamp": "2022-10-06T14:26:24Z"
+    },
+    {
+        "latitude": 50.61267833,
+        "longitude": 3.14233333,
+        "altitude": 80.7,
+        "timestamp": "2022-10-06T14:26:27Z"
+    },
+    {
+        "latitude": 50.612695,
+        "longitude": 3.14214833,
+        "altitude": 80.6,
+        "timestamp": "2022-10-06T14:26:30Z"
+    },
+    {
+        "latitude": 50.61266833,
+        "longitude": 3.141985,
+        "altitude": 81.1,
+        "timestamp": "2022-10-06T14:26:32Z"
+    },
+    {
+        "latitude": 50.612665,
+        "longitude": 3.14180167,
+        "altitude": 81.7,
+        "timestamp": "2022-10-06T14:26:34Z"
+    },
+    {
+        "latitude": 50.61266333,
+        "longitude": 3.14161667,
+        "altitude": 81.9,
+        "timestamp": "2022-10-06T14:26:36Z"
+    },
+    {
+        "latitude": 50.61266833,
+        "longitude": 3.141435,
+        "altitude": 81.2,
+        "timestamp": "2022-10-06T14:26:38Z"
+    },
+    {
+        "latitude": 50.61266833,
+        "longitude": 3.14125333,
+        "altitude": 80.4,
+        "timestamp": "2022-10-06T14:26:40Z"
+    }
+]

@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <open>1</open>
+    <visibility>1</visibility>
+    <name>AP Position </name>
+    <description>Vitesse: 0 km/h
+Altitude: 89 m
+Précision: 5 m</description>
+    <atom:author>
+      <atom:name></atom:name>
+    </atom:author>
+    <atom:link href="" />
+    <ExtendedData>
+      <Data name="comment">
+        <value></value>
+      </Data>
+    </ExtendedData>
+    <TimeStamp>
+      <when>2022-10-06T13:19:51Z</when>
+    </TimeStamp>
+    <Style id="track">
+      <LineStyle>
+        <color>ffff0000</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Schema id="geotrackerTrackSchema">
+      <gx:SimpleArrayField name="speed" type="float">
+        <displayName>Speed, meters per second</displayName>
+      </gx:SimpleArrayField>
+      <gx:SimpleArrayField name="course" type="float">
+        <displayName>Course, radians</displayName>
+      </gx:SimpleArrayField>
+    </Schema>
+    <Placemark>
+      <name>AP3 - métro</name>
+      <description>Vitesse: 0 km/h
+Altitude: 89 m
+Précision: 5 m</description>
+      <atom:author>
+        <atom:name></atom:name>
+      </atom:author>
+      <atom:link href="" />
+      <ExtendedData>
+        <Data name="comment">
+          <value></value>
+        </Data>
+        <Data name="visited">
+          <value>1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>3.14268147,50.61173179,89</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2022-10-06T13:19:51Z</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>AP4 - derrière FST</name>
+      <description>Vitesse: 0 km/h
+Altitude: 97 m
+Précision: 6 m</description>
+      <atom:author>
+        <atom:name></atom:name>
+      </atom:author>
+      <atom:link href="" />
+      <ExtendedData>
+        <Data name="comment">
+          <value></value>
+        </Data>
+        <Data name="visited">
+          <value>1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>3.1414918,50.61216753,97</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2022-10-06T13:22:18Z</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>AP FST boulevard</name>
+      <description>Vitesse: 0 km/h
+Altitude: 76 m
+Précision: 5 m</description>
+      <atom:author>
+        <atom:name></atom:name>
+      </atom:author>
+      <atom:link href="" />
+      <ExtendedData>
+        <Data name="comment">
+          <value></value>
+        </Data>
+        <Data name="visited">
+          <value>1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>3.14100839,50.61261291,76</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2022-10-06T13:26:24Z</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>AP1 - Hall pilote boulevard</name>
+      <description>Vitesse: 0 km/h
+Altitude: 76 m
+Précision: 5 m</description>
+      <atom:author>
+        <atom:name></atom:name>
+      </atom:author>
+      <atom:link href="" />
+      <ExtendedData>
+        <Data name="comment">
+          <value></value>
+        </Data>
+        <Data name="visited">
+          <value>1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>3.14390715,50.61177408,76</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2022-10-06T13:30:10Z</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>AP5 SH1</name>
+      <description>Vitesse: 0 km/h
+Altitude: 80 m
+Précision: 11 m</description>
+      <atom:author>
+        <atom:name></atom:name>
+      </atom:author>
+      <atom:link href="" />
+      <ExtendedData>
+        <Data name="comment">
+          <value></value>
+        </Data>
+        <Data name="visited">
+          <value>1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>3.14314742,50.61167042,80</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2022-10-06T13:31:39Z</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>AP6 - escalier métro </name>
+      <description>Vitesse: 0 km/h
+Altitude: 81 m
+Précision: 8 m</description>
+      <atom:author>
+        <atom:name></atom:name>
+      </atom:author>
+      <atom:link href="" />
+      <ExtendedData>
+        <Data name="comment">
+          <value></value>
+        </Data>
+        <Data name="visited">
+          <value>1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>3.14237848,50.61186998,81</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2022-10-06T13:43:53Z</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>AP7 coin FST panneau rassemblement </name>
+      <description>Vitesse: 0 km/h
+Altitude: 77 m
+Précision: 9 m</description>
+      <atom:author>
+        <atom:name></atom:name>
+      </atom:author>
+      <atom:link href="" />
+      <ExtendedData>
+        <Data name="comment">
+          <value></value>
+        </Data>
+        <Data name="visited">
+          <value>1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>3.14137592,50.6119716,77</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2022-10-06T14:00:55.018Z</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>AP8 FST poteau luminaire</name>
+      <description>Vitesse: 0 km/h
+Altitude: 85 m
+Précision: 5 m</description>
+      <atom:author>
+        <atom:name></atom:name>
+      </atom:author>
+      <atom:link href="" />
+      <ExtendedData>
+        <Data name="comment">
+          <value></value>
+        </Data>
+        <Data name="visited">
+          <value>1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>3.14178971,50.61183048,85</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2022-10-06T14:02:48Z</when>
+      </TimeStamp>
+    </Placemark>
+  </Document>
+</kml>

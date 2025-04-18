@@ -1,0 +1,42 @@
+[
+    {
+        "name": "AP3 - métro",
+        "latitude": 50.61173179,
+        "longitude": 3.14268147
+    },
+    {
+        "name": "AP4 - derrière FST",
+        "latitude": 50.61216753,
+        "longitude": 3.1414918
+    },
+    {
+        "name": "AP FST boulevard",
+        "latitude": 50.61261291,
+        "longitude": 3.14100839
+    },
+    {
+        "name": "AP1 - Hall pilote boulevard",
+        "latitude": 50.61177408,
+        "longitude": 3.14390715
+    },
+    {
+        "name": "AP5 SH1",
+        "latitude": 50.61167042,
+        "longitude": 3.14314742
+    },
+    {
+        "name": "AP6 - escalier métro ",
+        "latitude": 50.61186998,
+        "longitude": 3.14237848
+    },
+    {
+        "name": "AP7 coin FST panneau rassemblement ",
+        "latitude": 50.6119716,
+        "longitude": 3.14137592
+    },
+    {
+        "name": "AP8 FST poteau luminaire",
+        "latitude": 50.61183048,
+        "longitude": 3.14178971
+    }
+]
