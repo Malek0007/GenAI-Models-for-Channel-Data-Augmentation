@@ -154,7 +154,7 @@ Mqam = 16
 modulation_type = "qam"
 
 # User grouping related Precoding
-nuTh1 = 0.98
+nuTh1 = 0
 
 #  ------  Topologie & DL/UL ressouces
 L = 100
@@ -209,7 +209,7 @@ for UOIindex in range(0,8):
         all_distance_matrices = json.load(file)
 
     # Accéder à Dlk1 et convertir en tableau NumPy
-    Dlk1 = np.array(all_distance_matrices["Dlk2"])
+    Dlk1 = np.array(all_distance_matrices["Dlk1"])
 
     # Transposer si nécessaire (100 points x 8 APs au lieu de 8 x 100)
     Dlk = Dlk1.T
@@ -495,7 +495,7 @@ for UOIindex in range(0,8):
     }
 
     # Nom du fichier JSON
-    file_name = "simulation_data.json"
+    file_name = "simulation_data_MRT.json"
 
     # Lire les anciennes données du fichier, si elles existent
     try:
