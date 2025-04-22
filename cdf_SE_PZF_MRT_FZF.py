@@ -2,7 +2,7 @@ import json
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-sns.set_theme(style="whitegrid")  # Active le style seaborn whitegrid
+sns.set_theme(style="whitegrid")  
 
 
 # Charger les fichiers
@@ -25,6 +25,25 @@ SE_pzf_theo = [d["SE_theorique_PZF"] for d in pzf_data]
 SE_fzf_sim = [d["SE_simule_PZF"] for d in fzf_data]
 SE_fzf_theo = [d["SE_theorique_PZF"] for d in fzf_data]
 
+se_data = {
+    "MRT": {
+        "SE_simule_PZF": SE_mrt_sim,
+        "SE_theorique_PZF": SE_mrt_theo
+    },
+    "PZF": {
+        "SE_simule_PZF": SE_pzf_sim,
+        "SE_theorique_PZF": SE_pzf_theo
+    },
+    "FZF": {
+        "SE_simule_PZF": SE_fzf_sim,
+        "SE_theorique_PZF": SE_fzf_theo
+    }
+}
+
+# Sauvegarder dans un fichier JSON
+with open("se_matrices.json", "w") as json_file:
+    json.dump(se_data, json_file, indent=4)
+    
 # Fonction pour calculer la CDF
 def compute_cdf(data):
     sorted_data = np.sort(data)
