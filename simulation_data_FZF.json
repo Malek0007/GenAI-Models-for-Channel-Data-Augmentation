@@ -1,0 +1,562 @@
+[
+    {
+        "UOIindex": 0,
+        "SINR_simule_PZF": 35808.06542610405,
+        "SE_simule_PZF": 7.203827260037831,
+        "SINR_theorique_PZF": 38749.266696704246,
+        "SE_theorique_PZF": 7.258056485354484
+    },
+    {
+        "UOIindex": 1,
+        "SINR_simule_PZF": 21953.389212538696,
+        "SE_simule_PZF": 6.867724656057875,
+        "SINR_theorique_PZF": 20688.47096613708,
+        "SE_theorique_PZF": 6.8269567310579
+    },
+    {
+        "UOIindex": 2,
+        "SINR_simule_PZF": 471349.84791180067,
+        "SE_simule_PZF": 8.974496094184367,
+        "SINR_theorique_PZF": 418277.04544371646,
+        "SE_theorique_PZF": 8.892429881097028
+    },
+    {
+        "UOIindex": 3,
+        "SINR_simule_PZF": 231848.18525559586,
+        "SE_simule_PZF": 8.487060538744625,
+        "SINR_theorique_PZF": 217439.7433617437,
+        "SE_theorique_PZF": 8.442982270373957
+    },
+    {
+        "UOIindex": 4,
+        "SINR_simule_PZF": 42956.800813449125,
+        "SE_simule_PZF": 7.328872627270901,
+        "SINR_theorique_PZF": 44250.65050639235,
+        "SE_theorique_PZF": 7.349258878885658
+    },
+    {
+        "UOIindex": 5,
+        "SINR_simule_PZF": 608656.4050561184,
+        "SE_simule_PZF": 9.150128991134284,
+        "SINR_theorique_PZF": 601875.1052911193,
+        "SE_theorique_PZF": 9.142431912749768
+    },
+    {
+        "UOIindex": 6,
+        "SINR_simule_PZF": 1973.043422254959,
+        "SE_simule_PZF": 5.212827623428337,
+        "SINR_theorique_PZF": 2067.3512708243215,
+        "SE_theorique_PZF": 5.244888336154515
+    },
+    {
+        "UOIindex": 7,
+        "SINR_simule_PZF": 2539.5196015056385,
+        "SE_simule_PZF": 5.38614660953627,
+        "SINR_theorique_PZF": 2829.6393409599123,
+        "SE_theorique_PZF": 5.460434394346986
+    },
+    {
+        "UOIindex": 0,
+        "SINR_simule_PZF": 132732.9178167889,
+        "SE_simule_PZF": 8.103894070277695,
+        "SINR_theorique_PZF": 139274.3186297807,
+        "SE_theorique_PZF": 8.136942900470627
+    },
+    {
+        "UOIindex": 1,
+        "SINR_simule_PZF": 14972.464180795701,
+        "SE_simule_PZF": 6.604819244662063,
+        "SINR_theorique_PZF": 14113.404910056988,
+        "SE_theorique_PZF": 6.564228896606765
+    },
+    {
+        "UOIindex": 2,
+        "SINR_simule_PZF": 163725.17038826947,
+        "SE_simule_PZF": 8.248059723122026,
+        "SINR_theorique_PZF": 178344.0351124625,
+        "SE_theorique_PZF": 8.30681501337992
+    },
+    {
+        "UOIindex": 3,
+        "SINR_simule_PZF": 392496.66924582154,
+        "SE_simule_PZF": 8.848725981602236,
+        "SINR_theorique_PZF": 362507.8533048368,
+        "SE_theorique_PZF": 8.794122239973861
+    },
+    {
+        "UOIindex": 4,
+        "SINR_simule_PZF": 146656.79314530295,
+        "SE_simule_PZF": 8.172425814250245,
+        "SINR_theorique_PZF": 134566.8111784268,
+        "SE_theorique_PZF": 8.113320871829464
+    },
+    {
+        "UOIindex": 5,
+        "SINR_simule_PZF": 252393.16068168968,
+        "SE_simule_PZF": 8.545390003508633,
+        "SINR_theorique_PZF": 241162.54427355892,
+        "SE_theorique_PZF": 8.51412014844264
+    },
+    {
+        "UOIindex": 6,
+        "SINR_simule_PZF": 3309.4609092596506,
+        "SE_simule_PZF": 5.568007799715168,
+        "SINR_theorique_PZF": 2961.983515461033,
+        "SE_theorique_PZF": 5.491826135504477
+    },
+    {
+        "UOIindex": 7,
+        "SINR_simule_PZF": 2086.7396823822983,
+        "SE_simule_PZF": 5.251298152364713,
+        "SINR_theorique_PZF": 2288.114141419283,
+        "SE_theorique_PZF": 5.314558898106675
+    },
+    {
+        "UOIindex": 0,
+        "SINR_simule_PZF": 70393.2061510544,
+        "SE_simule_PZF": 7.668175748181056,
+        "SINR_theorique_PZF": 76260.40110186864,
+        "SE_theorique_PZF": 7.723174007889879
+    },
+    {
+        "UOIindex": 1,
+        "SINR_simule_PZF": 15239.537312122457,
+        "SE_simule_PZF": 6.616964831500791,
+        "SINR_theorique_PZF": 14460.347759884204,
+        "SE_theorique_PZF": 6.580911615961142
+    },
+    {
+        "UOIindex": 2,
+        "SINR_simule_PZF": 136032.96400525447,
+        "SE_simule_PZF": 8.120765415646286,
+        "SINR_theorique_PZF": 161174.454172613,
+        "SE_theorique_PZF": 8.237272630126968
+    },
+    {
+        "UOIindex": 3,
+        "SINR_simule_PZF": 427128.5388448573,
+        "SE_simule_PZF": 8.906816260862989,
+        "SINR_theorique_PZF": 391119.2364690522,
+        "SE_theorique_PZF": 8.846310789114721
+    },
+    {
+        "UOIindex": 4,
+        "SINR_simule_PZF": 33722.38350536666,
+        "SE_simule_PZF": 7.162600795391987,
+        "SINR_theorique_PZF": 39606.67309252959,
+        "SE_theorique_PZF": 7.273091584059984
+    },
+    {
+        "UOIindex": 5,
+        "SINR_simule_PZF": 363662.28101062786,
+        "SE_simule_PZF": 8.796306542395735,
+        "SINR_theorique_PZF": 390393.94512412243,
+        "SE_theorique_PZF": 8.845035641565463
+    },
+    {
+        "UOIindex": 6,
+        "SINR_simule_PZF": 6775.276406446345,
+        "SE_simule_PZF": 6.060131908817627,
+        "SINR_theorique_PZF": 7136.687213238552,
+        "SE_theorique_PZF": 6.0958290313560575
+    },
+    {
+        "UOIindex": 7,
+        "SINR_simule_PZF": 33362.8970653474,
+        "SE_simule_PZF": 7.155238186651245,
+        "SINR_theorique_PZF": 32219.380800810977,
+        "SE_theorique_PZF": 7.131279011607572
+    },
+    {
+        "UOIindex": 0,
+        "SINR_simule_PZF": 46024.840800519596,
+        "SE_simule_PZF": 7.376264979301325,
+        "SINR_theorique_PZF": 44096.25448863847,
+        "SE_theorique_PZF": 7.346857721619954
+    },
+    {
+        "UOIindex": 1,
+        "SINR_simule_PZF": 10351.59054543158,
+        "SE_simule_PZF": 6.351287714455535,
+        "SINR_theorique_PZF": 11471.395561766492,
+        "SE_theorique_PZF": 6.421847168035994
+    },
+    {
+        "UOIindex": 2,
+        "SINR_simule_PZF": 139452.49415882997,
+        "SE_simule_PZF": 8.13782121787992,
+        "SINR_theorique_PZF": 129356.93159422923,
+        "SE_theorique_PZF": 8.086194757218601
+    },
+    {
+        "UOIindex": 3,
+        "SINR_simule_PZF": 153145.0124887024,
+        "SE_simule_PZF": 8.20216584664494,
+        "SINR_theorique_PZF": 157610.5703395812,
+        "SE_theorique_PZF": 8.221911391448032
+    },
+    {
+        "UOIindex": 4,
+        "SINR_simule_PZF": 23533.500856333365,
+        "SE_simule_PZF": 6.915471254645294,
+        "SINR_theorique_PZF": 25771.966721926467,
+        "SE_theorique_PZF": 6.977890949853686
+    },
+    {
+        "UOIindex": 5,
+        "SINR_simule_PZF": 626931.6282651684,
+        "SE_simule_PZF": 9.170452804860597,
+        "SINR_theorique_PZF": 664067.1467533775,
+        "SE_theorique_PZF": 9.209986558640573
+    },
+    {
+        "UOIindex": 6,
+        "SINR_simule_PZF": 3312.435830680835,
+        "SE_simule_PZF": 5.568624887876045,
+        "SINR_theorique_PZF": 3158.605053771774,
+        "SE_theorique_PZF": 5.535965961649943
+    },
+    {
+        "UOIindex": 7,
+        "SINR_simule_PZF": 13216.6262848859,
+        "SE_simule_PZF": 6.519131185830818,
+        "SINR_theorique_PZF": 15022.509111320278,
+        "SE_theorique_PZF": 6.607111527996995
+    },
+    {
+        "UOIindex": 0,
+        "SINR_simule_PZF": 43802.21115382319,
+        "SE_simule_PZF": 7.342261435839828,
+        "SINR_theorique_PZF": 46342.17654183243,
+        "SE_theorique_PZF": 7.380985388132854
+    },
+    {
+        "UOIindex": 1,
+        "SINR_simule_PZF": 35984.97288162676,
+        "SE_simule_PZF": 7.2072128770112815,
+        "SINR_theorique_PZF": 34674.88244911874,
+        "SE_theorique_PZF": 7.181735703327187
+    },
+    {
+        "UOIindex": 2,
+        "SINR_simule_PZF": 147447.87431948286,
+        "SE_simule_PZF": 8.176121563237375,
+        "SINR_theorique_PZF": 141693.18068462182,
+        "SE_theorique_PZF": 8.148771896705739
+    },
+    {
+        "UOIindex": 3,
+        "SINR_simule_PZF": 71322.7921515319,
+        "SE_simule_PZF": 7.67718847139351,
+        "SINR_theorique_PZF": 84042.36686421292,
+        "SE_theorique_PZF": 7.789926827892293
+    },
+    {
+        "UOIindex": 4,
+        "SINR_simule_PZF": 67909.85874738378,
+        "SE_simule_PZF": 7.643502216750071,
+        "SINR_theorique_PZF": 68896.95739475655,
+        "SE_theorique_PZF": 7.653415996092797
+    },
+    {
+        "UOIindex": 5,
+        "SINR_simule_PZF": 593647.8493203953,
+        "SE_simule_PZF": 9.132976326518603,
+        "SINR_theorique_PZF": 518907.3247281171,
+        "SE_theorique_PZF": 9.040533407298675
+    },
+    {
+        "UOIindex": 6,
+        "SINR_simule_PZF": 2283.3629608306073,
+        "SE_simule_PZF": 5.313131515419136,
+        "SINR_theorique_PZF": 2154.029861094283,
+        "SE_theorique_PZF": 5.273091497508217
+    },
+    {
+        "UOIindex": 7,
+        "SINR_simule_PZF": 28061.751675377607,
+        "SE_simule_PZF": 7.036366122854076,
+        "SINR_theorique_PZF": 28988.45137371199,
+        "SE_theorique_PZF": 7.058685909598876
+    },
+    {
+        "UOIindex": 0,
+        "SINR_simule_PZF": 90371.99981513002,
+        "SE_simule_PZF": 7.839811519736902,
+        "SINR_theorique_PZF": 96615.60047741693,
+        "SE_theorique_PZF": 7.885706414752193
+    },
+    {
+        "UOIindex": 1,
+        "SINR_simule_PZF": 24291.37439136797,
+        "SE_simule_PZF": 6.937245661274604,
+        "SINR_theorique_PZF": 26007.420304367293,
+        "SE_theorique_PZF": 6.984138645376542
+    },
+    {
+        "UOIindex": 2,
+        "SINR_simule_PZF": 103463.6909528807,
+        "SE_simule_PZF": 7.932751896413269,
+        "SINR_theorique_PZF": 104167.9992631446,
+        "SE_theorique_PZF": 7.937412604424873
+    },
+    {
+        "UOIindex": 3,
+        "SINR_simule_PZF": 158518.94858068702,
+        "SE_simule_PZF": 8.225859466136493,
+        "SINR_theorique_PZF": 170054.88085167547,
+        "SE_theorique_PZF": 8.274118748785108
+    },
+    {
+        "UOIindex": 4,
+        "SINR_simule_PZF": 84883.5902426,
+        "SE_simule_PZF": 7.796769073089525,
+        "SINR_theorique_PZF": 74652.85168897801,
+        "SE_theorique_PZF": 7.7085376553341804
+    },
+    {
+        "UOIindex": 5,
+        "SINR_simule_PZF": 170347.2481826463,
+        "SE_simule_PZF": 8.275298850306884,
+        "SINR_theorique_PZF": 170150.90582946403,
+        "SE_theorique_PZF": 8.274506564333805
+    },
+    {
+        "UOIindex": 6,
+        "SINR_simule_PZF": 7513.636503620638,
+        "SE_simule_PZF": 6.131184573694066,
+        "SINR_theorique_PZF": 7771.8489761128,
+        "SE_theorique_PZF": 6.154394176231254
+    },
+    {
+        "UOIindex": 7,
+        "SINR_simule_PZF": 14933.832416229432,
+        "SE_simule_PZF": 6.603044489907798,
+        "SINR_theorique_PZF": 12553.41256752922,
+        "SE_theorique_PZF": 6.483765192721361
+    },
+    {
+        "UOIindex": 0,
+        "SINR_simule_PZF": 41996.46330783833,
+        "SE_simule_PZF": 7.3133402713014934,
+        "SINR_theorique_PZF": 43716.41839945833,
+        "SE_theorique_PZF": 7.340914566219947
+    },
+    {
+        "UOIindex": 1,
+        "SINR_simule_PZF": 28625.908346218184,
+        "SE_simule_PZF": 7.050040118986632,
+        "SINR_theorique_PZF": 30444.09195629941,
+        "SE_theorique_PZF": 7.092343833339024
+    },
+    {
+        "UOIindex": 2,
+        "SINR_simule_PZF": 240233.5145139069,
+        "SE_simule_PZF": 8.511468529759554,
+        "SINR_theorique_PZF": 224661.9050753897,
+        "SE_theorique_PZF": 8.465429718997614
+    },
+    {
+        "UOIindex": 3,
+        "SINR_simule_PZF": 74898.75769986524,
+        "SE_simule_PZF": 7.710796871968459,
+        "SINR_theorique_PZF": 69908.62221958498,
+        "SE_theorique_PZF": 7.663430199264866
+    },
+    {
+        "UOIindex": 4,
+        "SINR_simule_PZF": 40567.65081999835,
+        "SE_simule_PZF": 7.2895608112360195,
+        "SINR_theorique_PZF": 50102.92361810502,
+        "SE_theorique_PZF": 7.434588554410524
+    },
+    {
+        "UOIindex": 5,
+        "SINR_simule_PZF": 261166.61561809925,
+        "SE_simule_PZF": 8.568864995452092,
+        "SINR_theorique_PZF": 296569.3078438156,
+        "SE_theorique_PZF": 8.656197447183064
+    },
+    {
+        "UOIindex": 6,
+        "SINR_simule_PZF": 6803.32377244303,
+        "SE_simule_PZF": 6.062969559782636,
+        "SINR_theorique_PZF": 7885.159469287384,
+        "SE_theorique_PZF": 6.164336747016664
+    },
+    {
+        "UOIindex": 7,
+        "SINR_simule_PZF": 1675.4869488898598,
+        "SE_simule_PZF": 5.1005835889284965,
+        "SINR_theorique_PZF": 1827.4203303571023,
+        "SE_theorique_PZF": 5.160181928691197
+    },
+    {
+        "UOIindex": 0,
+        "SINR_simule_PZF": 51978.86588543453,
+        "SE_simule_PZF": 7.459840614776397,
+        "SINR_theorique_PZF": 60462.09945201752,
+        "SE_theorique_PZF": 7.563698721746483
+    },
+    {
+        "UOIindex": 1,
+        "SINR_simule_PZF": 15571.311675710105,
+        "SE_simule_PZF": 6.631759764189001,
+        "SINR_theorique_PZF": 17018.228173594976,
+        "SE_theorique_PZF": 6.69279904355387
+    },
+    {
+        "UOIindex": 2,
+        "SINR_simule_PZF": 425551.8700257702,
+        "SE_simule_PZF": 8.904275645556181,
+        "SINR_theorique_PZF": 403327.9186539071,
+        "SE_theorique_PZF": 8.86742729762754
+    },
+    {
+        "UOIindex": 3,
+        "SINR_simule_PZF": 64236.77346574733,
+        "SE_simule_PZF": 7.605302032509662,
+        "SINR_theorique_PZF": 64889.47086821885,
+        "SE_theorique_PZF": 7.612247149673433
+    },
+    {
+        "UOIindex": 4,
+        "SINR_simule_PZF": 102982.68595768463,
+        "SE_simule_PZF": 7.929550612889461,
+        "SINR_theorique_PZF": 127161.10333941733,
+        "SE_theorique_PZF": 8.074432980612473
+    },
+    {
+        "UOIindex": 5,
+        "SINR_simule_PZF": 154088.6290971612,
+        "SE_simule_PZF": 8.206385828523915,
+        "SINR_theorique_PZF": 151077.48928430385,
+        "SE_theorique_PZF": 8.192827970052397
+    },
+    {
+        "UOIindex": 6,
+        "SINR_simule_PZF": 7765.942247559514,
+        "SE_simule_PZF": 6.153871915834766,
+        "SINR_theorique_PZF": 6944.889885816244,
+        "SE_theorique_PZF": 6.077116106815704
+    },
+    {
+        "UOIindex": 7,
+        "SINR_simule_PZF": 32184.61675064623,
+        "SE_simule_PZF": 7.130537378107715,
+        "SINR_theorique_PZF": 28567.87782919887,
+        "SE_theorique_PZF": 7.048646070770854
+    },
+    {
+        "UOIindex": 0,
+        "SINR_simule_PZF": 160786.53830406928,
+        "SE_simule_PZF": 8.235617176420705,
+        "SINR_theorique_PZF": 146288.49514272093,
+        "SE_theorique_PZF": 8.170698404566195
+    },
+    {
+        "UOIindex": 1,
+        "SINR_simule_PZF": 31654.381168586744,
+        "SE_simule_PZF": 7.119125308088713,
+        "SINR_theorique_PZF": 34897.00067368348,
+        "SE_theorique_PZF": 7.186122269300987
+    },
+    {
+        "UOIindex": 2,
+        "SINR_simule_PZF": 215764.43118336643,
+        "SE_simule_PZF": 8.437668674605343,
+        "SINR_theorique_PZF": 220662.94349928293,
+        "SE_theorique_PZF": 8.453091136600712
+    },
+    {
+        "UOIindex": 3,
+        "SINR_simule_PZF": 96621.82683628093,
+        "SE_simule_PZF": 7.8857506861920035,
+        "SINR_theorique_PZF": 88422.02130849985,
+        "SE_theorique_PZF": 7.824825909448304
+    },
+    {
+        "UOIindex": 4,
+        "SINR_simule_PZF": 15741.417925084443,
+        "SE_simule_PZF": 6.639223583458533,
+        "SINR_theorique_PZF": 14385.639152158392,
+        "SE_theorique_PZF": 6.577353325950709
+    },
+    {
+        "UOIindex": 5,
+        "SINR_simule_PZF": 309017.93444642576,
+        "SE_simule_PZF": 8.684445577713202,
+        "SINR_theorique_PZF": 304999.67400966526,
+        "SE_theorique_PZF": 8.67545376441622
+    },
+    {
+        "UOIindex": 6,
+        "SINR_simule_PZF": 12913.92854927008,
+        "SE_simule_PZF": 6.503215257829227,
+        "SINR_theorique_PZF": 12079.47430570313,
+        "SE_theorique_PZF": 6.457328323176394
+    },
+    {
+        "UOIindex": 7,
+        "SINR_simule_PZF": 1516.4818457185968,
+        "SE_simule_PZF": 5.032125496033937,
+        "SINR_theorique_PZF": 1333.6259851542673,
+        "SE_theorique_PZF": 4.943914182455611
+    },
+    {
+        "UOIindex": 0,
+        "SINR_simule_PZF": 45798.288114293995,
+        "SE_simule_PZF": 7.37287502541654,
+        "SINR_theorique_PZF": 49567.93644909421,
+        "SE_theorique_PZF": 7.427213659157443
+    },
+    {
+        "UOIindex": 1,
+        "SINR_simule_PZF": 20842.260885897507,
+        "SE_simule_PZF": 6.832044467398521,
+        "SINR_theorique_PZF": 22027.069259545537,
+        "SE_theorique_PZF": 6.87002639486051
+    },
+    {
+        "UOIindex": 2,
+        "SINR_simule_PZF": 55688.80035694261,
+        "SE_simule_PZF": 7.5072026191706005,
+        "SINR_theorique_PZF": 54806.01390651842,
+        "SE_theorique_PZF": 7.49622519661568
+    },
+    {
+        "UOIindex": 3,
+        "SINR_simule_PZF": 58607.634287015426,
+        "SE_simule_PZF": 7.542297904399425,
+        "SINR_theorique_PZF": 60969.644754889596,
+        "SE_theorique_PZF": 7.569441515188351
+    },
+    {
+        "UOIindex": 4,
+        "SINR_simule_PZF": 116539.54679736456,
+        "SE_simule_PZF": 8.014510694876664,
+        "SINR_theorique_PZF": 132584.03454321044,
+        "SE_theorique_PZF": 8.103123055111311
+    },
+    {
+        "UOIindex": 5,
+        "SINR_simule_PZF": 393183.8380502642,
+        "SE_simule_PZF": 8.849927697211035,
+        "SINR_theorique_PZF": 337252.0992800326,
+        "SE_theorique_PZF": 8.744510559863715
+    },
+    {
+        "UOIindex": 6,
+        "SINR_simule_PZF": 8568.30422010518,
+        "SE_simule_PZF": 6.221410645206128,
+        "SINR_theorique_PZF": 8736.064676254913,
+        "SE_theorique_PZF": 6.234729978449244
+    },
+    {
+        "UOIindex": 7,
+        "SINR_simule_PZF": 7175.52553981594,
+        "SE_simule_PZF": 6.099557060913678,
+        "SINR_theorique_PZF": 6298.3424605235805,
+        "SE_theorique_PZF": 6.009993109235082
+    }
+]
