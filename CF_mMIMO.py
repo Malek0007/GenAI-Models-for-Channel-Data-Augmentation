@@ -198,19 +198,22 @@ SEkTheo_PZF = np.zeros(Nsnap,dtype=float)
 SEksim_PZF = np.zeros(Nsnap,dtype=float)
 
 # ------------- Generating Topology ----------- #
-for iNsnap in range(0,Nsnap):
+iNsnap=1
+for UOIindex in range(0,8):
     # print("\n ----- Snap number : ",iNsnap+1, " -----")
     
-    UOIindex = np.random.randint(0,K,1)[0]#Selects a random user out of K users
+     # Selects a random index between 0 and 7
     SCOIindex = np.random.randint(BG,Mfft-BG,1)[0]#Selects a subcarrier index within a range, ensuring a margin BG from the start and end
     
-    with open("distance_matrix.json", "r") as file:
-        distance_matrix = np.array(json.load(file))  # Convertir en tableau NumPy
+    with open("distance_matrices_all_Dlk.json", "r", encoding="utf-8") as file:
+        all_distance_matrices = json.load(file)
 
-    # Calculer la transposée
-    Dlk = distance_matrix.T  
+    # Accéder à Dlk1 et convertir en tableau NumPy
+    Dlk1 = np.array(all_distance_matrices["Dlk2"])
 
-    print("Distance:\n", Dlk)
+    # Transposer si nécessaire (100 points x 8 APs au lieu de 8 x 100)
+    Dlk = Dlk1.T
+
     # Pilots
     Pilots = np.sqrt(Tau_p)*randU(Tau_p) #Random signals
     # Uniform Pilot assignement
@@ -471,36 +474,71 @@ for iNsnap in range(0,Nsnap):
     UIktsim = np.sum(np.mean((np.abs(UIkt0))**2,0))
     print("\r-------------")
     # Sim SANS DAC
+    # print("UOIindex",UOIindex)# %%
     SINRksim_PZF = CPksim / (PUksim + UIktsim + wp)
-    print(" SINR PZF simulé :",SINRksim_PZF)
-    SEksim_PZF[iNsnap] = xi*(1-(Tau_p/Tau_c))*np.log2(1+SINRksim_PZF)
-    print("SE PZF simulé : " +str(SEksim_PZF[iNsnap]))
+    # print(" SINR PZF simulé :",SINRksim_PZF)
+    SEksim_PZF = xi*(1-(Tau_p/Tau_c))*np.log2(1+SINRksim_PZF)
+    # print("SE PZF simulé : " +str(SEksim_PZF))
     
     #Theo SANS DAC
     SINRktheo_PZF = CPktheo / (PUktheo + UIkttheo + wp)
-    print("SINR théorique :",SINRktheo_PZF)
-    SEkTheo_PZF[iNsnap] = xi*(1-(Tau_p/Tau_c))*np.log2(1+SINRktheo_PZF)
+    # print("SINR théorique :",SINRktheo_PZF)
+    SEkTheo_PZF = xi*(1-(Tau_p/Tau_c))*np.log2(1+SINRktheo_PZF)
     
-    print("SE PZF théorique : " +str(SEkTheo_PZF[iNsnap]))
+    # print("SE PZF théorique : " +str(SEkTheo_PZF))
+    data_to_save = {
+        "UOIindex": UOIindex,
+        "SINR_simule_PZF": SINRksim_PZF,
+        "SE_simule_PZF": SEksim_PZF,
+        "SINR_theorique_PZF": SINRktheo_PZF,
+        "SE_theorique_PZF": SEkTheo_PZF,
+    }
 
-# %%
+    # Nom du fichier JSON
+    file_name = "simulation_data.json"
+
+    # Lire les anciennes données du fichier, si elles existent
+    try:
+        with open(file_name, 'r') as file:
+            existing_data = json.load(file)
+    except FileNotFoundError:
+        existing_data = []
+
+    # Ajouter les nouvelles données
+    existing_data.append(data_to_save)
+
+    # Enregistrer les nouvelles données dans le fichier JSON
+    with open(file_name, 'w') as file:
+        json.dump(existing_data, file, indent=4)
+
+    # Afficher les résultats
+    print("UOIindex", UOIindex)
+    print("SINR PZF simulé :", SINRksim_PZF)
+    print("SE PZF simulé : " + str(SEksim_PZF))
+    print("SINR théorique :", SINRktheo_PZF)
+    print("SE PZF théorique : " + str(SEkTheo_PZF))
+
 
 # Génère un faux vecteur de SE pour tester
-SE_sim = np.random.normal(3.5, 0.2, 100)
-SE_theo = np.random.normal(3.7, 0.2, 100)
 
-SE_sim_sorted = np.sort(SE_sim)
-SE_theo_sorted = np.sort(SE_theo)
+SE_sim_list = [entry["SE_simule_PZF"] for entry in existing_data]
+SE_theo_list = [entry["SE_theorique_PZF"] for entry in existing_data]
 
+# Tri
+SE_sim_sorted = np.sort(SE_sim_list)
+SE_theo_sorted = np.sort(SE_theo_list)
+
+# CDF
 cdf_sim = np.arange(1, len(SE_sim_sorted)+1) / len(SE_sim_sorted)
 cdf_theo = np.arange(1, len(SE_theo_sorted)+1) / len(SE_theo_sorted)
 
+# Tracé
 plt.figure()
 plt.plot(SE_sim_sorted, cdf_sim, label='SE simulé')
 plt.plot(SE_theo_sorted, cdf_theo, label='SE théorique')
 plt.xlabel("Spectral Efficiency (bit/s/Hz)")
 plt.ylabel("CDF")
+plt.title("CDF de l'efficacité spectrale")
 plt.legend()
 plt.grid(True)
 plt.show()
-

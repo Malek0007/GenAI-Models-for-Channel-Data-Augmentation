@@ -12,6 +12,7 @@ import numpy as np
 import SignalTools
 import matplotlib.pyplot as plt
 import json
+import os
 #import tensorflow as tf
 # Function definition
 def frange(x, y, jump):
@@ -186,11 +187,19 @@ for iNsnap in range(0,Nsnap):
     UEs[:,1] = np.random.uniform(0,D,K)
     UEs[:,2] = np.random.uniform(0,D,K)
     
-    with open("distance_matrix.json", "r") as file:
-        distance_matrix = np.array(json.load(file))  # Convertir en tableau NumPy
+    # with open("distance_matrix.json", "r") as file:
+    #     distance_matrix = np.array(json.load(file))  # Convertir en tableau NumPy
 
-    # Calculer la transposée
-    Dlk = distance_matrix.T  
+    # # Calculer la transposée
+    # Dlk = distance_matrix.T  
+    with open("distance_matrices_all_Dlk.json", "r", encoding="utf-8") as file:
+        all_distance_matrices = json.load(file)
+
+    # Accéder à Dlk1 et convertir en tableau NumPy
+    Dlk1 = np.array(all_distance_matrices["Dlk1"])
+
+    # Transposer si nécessaire (100 points x 8 APs au lieu de 8 x 100)
+    Dlk = Dlk1.T
     # Pilots
     Pilots = np.sqrt(Tau_p)*randU(Tau_p)
     # Uniform Pilot assignement
@@ -207,7 +216,8 @@ for iNsnap in range(0,Nsnap):
     for up in range(0,K):
         PhiP[:,up] = Pilots[:,int(userPilotIndex[up])]
     
-    PL_lk_dB = -36.7*np.log10(Dlk) - 22.7 - 26*np.log10(FcGHz) #-30.5 - 36.7*np.log10(Dlk)
+    PL_lk_dB = -36.7*np.log10(Dlk) - 22.7 - 26*np.log10(FcGHz) #
+    # PL_lk_dB =-30.5 - 36.7*np.log10(Dlk)
     PL_lk = 10**(PL_lk_dB/10)
 
     al0 = np.random.randn(L,1)
@@ -257,7 +267,7 @@ for iNsnap in range(0,Nsnap):
     
     Pk = pk*np.diag(np.ones(K))
     
-    # Channel estimation
+    # # Channel estimation
     Clk = np.zeros((L,K),dtype=float)
     for k in range(0,K):
         UONIindex = [] # np.zeros((1,1),dtype=int)
@@ -284,61 +294,126 @@ for iNsnap in range(0,Nsnap):
             
     Thetalk = NUlk/(Clk**2)
             
-    UONIindex = [] 
-    for kk in range(0,K):
-        if (userPilotIndex[kk]==userPilotIndex[UOIindex]) & (kk!=UOIindex):
-            UONIindex = np.concatenate((UONIindex,np.reshape(kk,(1))),0)
+    # UONIindex = [] 
+    # for kk in range(0,K):
+    #     if (userPilotIndex[kk]==userPilotIndex[UOIindex]) & (kk!=UOIindex):
+    #         UONIindex = np.concatenate((UONIindex,np.reshape(kk,(1))),0)
             
-    betalt = 0
-    for ind in range(0,len(UONIindex)):
-        betalt = betalt + BETAlk[l,int(UONIindex[ind])]
+    # betalt = 0
+    # for ind in range(0,len(UONIindex)):
+    #     betalt = betalt + BETAlk[l,int(UONIindex[ind])]
     
     
     RHOlk = np.zeros((L,K),dtype=float)
     for l in range(0,L):
         for k in range(0,K):
             RHOlk[l,k] = ((NUlk[l,k]/np.sum(NUlk[l,:]))*Rho_l_max)    # # Power control
-    print("UOIindex",UOIindex)
+    
     CPktheo0 = np.sqrt(RHOlk[:,UOIindex]*NUlk[:,UOIindex])
     CPktheo = (M-Tau_p)*(np.sum(CPktheo0))**2
-    #print("CPktheo",CPktheo)
+    # #print("CPktheo",CPktheo)
     
-    PUktheo0 = 0
-    for t in range(0,len(UONIindex)):
-        PUktheo0 = PUktheo0 + (np.sum(np.sqrt(RHOlk[:,int(UONIindex[ind])]*NUlk[:,UOIindex])))**2
-    PUktheo = (M-Tau_p)*PUktheo0
-    #print("PUktheo",PUktheo)
-    UIkttheo0=0
-    for t in range(0,K):
-        UIkttheo0 = UIkttheo0 + RHOlk[:,t]*(BETAlk[:,UOIindex]-NUlk[:,UOIindex])   
-    UIkttheo = np.sum(UIkttheo0)
-    #print("UIkttheo",UIkttheo)
+    # PUktheo0 = 0
+    # for t in range(0,len(UONIindex)):
+    #     PUktheo0 = PUktheo0 + (np.sum(np.sqrt(RHOlk[:,int(UONIindex[ind])]*NUlk[:,UOIindex])))**2
+    # PUktheo = (M-Tau_p)*PUktheo0
+    # #print("PUktheo",PUktheo)
+    # UIkttheo0=0
+    # for t in range(0,K):
+    #     UIkttheo0 = UIkttheo0 + RHOlk[:,t]*(BETAlk[:,UOIindex]-NUlk[:,UOIindex])   
+    # UIkttheo = np.sum(UIkttheo0)
+    # #print("UIkttheo",UIkttheo)
     
     
-    SINRktheo = CPktheo/(PUktheo + UIkttheo + wp)
+    # SINRktheo = CPktheo/(PUktheo + UIkttheo + wp)
     
-    # # Dans la boucle :
-    # for idx, kk in enumerate(range(k)):
-    #     CPk = (M - Tau_p) * (np.sum(np.sqrt(RHOlk[:, int(kk)] * NUlk[:, int(kk)])))**2
+    # # # Dans la boucle :
+    # # for idx, kk in enumerate(range(k)):
+    # #     CPk = (M - Tau_p) * (np.sum(np.sqrt(RHOlk[:, int(kk)] * NUlk[:, int(kk)])))**2
         
-    #     PUk = 0
-    #     for j in range(0, K):
-    #         if j != kk:
-    #             PUk += (np.sum(np.sqrt(RHOlk[:, j] * NUlk[:, int(kk)])))**2
+    # #     PUk = 0
+    # #     for j in range(0, K):
+    # #         if j != kk:
+    # #             PUk += (np.sum(np.sqrt(RHOlk[:, j] * NUlk[:, int(kk)])))**2
                 
-    #     UIk = np.sum(RHOlk[:, int(kk)] * (BETAlk[:, int(kk)] - NUlk[:, int(kk)]))
+    # #     UIk = np.sum(RHOlk[:, int(kk)] * (BETAlk[:, int(kk)] - NUlk[:, int(kk)]))
 
-    #     SINRk = CPk / (PUk + UIk + wp)
+    # #     SINRk = CPk / (PUk + UIk + wp)
 
-    #     SE_individuel_vecteur[iNsnap, idx] = xi * (1 - (Tau_p / Tau_c)) * np.log2(1 + SINRk)
-    # print("SE_individuel_vecteur",SE_individuel_vecteur)
-    print("SINRktheo")
-    print(SINRktheo)
-    print("------------------------")
-    SEkTheo[iNsnap] = xi*(1-(Tau_p/Tau_c))*np.log2(1+SINRktheo)
-    SE_total = np.sum(SEkTheo)  # Somme de tous les éléments dans SEkTheo
-    print("SE total :", SE_total)
+    # #     SE_individuel_vecteur[iNsnap, idx] = xi * (1 - (Tau_p / Tau_c)) * np.log2(1 + SINRk)
+    # # print("SE_individuel_vecteur",SE_individuel_vecteur)
+    # print("SINRktheo")
+    # print(SINRktheo)
+    # print("------------------------")
+    # SEkTheo[iNsnap] = xi*(1-(Tau_p/Tau_c))*np.log2(1+SINRktheo)
+    # SE_total = np.sum(SEkTheo)  # Somme de tous les éléments dans SEkTheo
+    # print("SE total :", SE_total)
+    SINRktheo = np.zeros(K)
+    SEkTheo = np.zeros(K)
+
+    for k in range(K):  # Pour chaque utilisateur k
+        UOIindex = k
+
+        # Trouver les utilisateurs qui utilisent le même pilote sauf UOIindex
+        UONIindex = []
+        for kk in range(K):
+            if userPilotIndex[kk] == userPilotIndex[UOIindex] and kk != UOIindex:
+                UONIindex = np.concatenate((UONIindex, np.reshape(kk, (1))), axis=0)
+
+        # Calcul de betalt
+        betalt = 0
+        for ind in range(len(UONIindex)):
+            betalt += BETAlk[l, int(UONIindex[ind])]
+
+        # RHOlk ne dépend pas de UOIindex → le calculer avant la boucle si possible
+        # (tu l’as déjà fait plus haut, donc pas besoin de recalculer ici si inchangé)
+
+        # Calcul CPktheo
+        CPktheo0 = np.sqrt(RHOlk[:, UOIindex] * NUlk[:, UOIindex])
+        CPktheo = (M - Tau_p) * (np.sum(CPktheo0))**2
+
+        # Calcul PUktheo
+        PUktheo0 = 0
+        for t in range(len(UONIindex)):
+            PUktheo0 += (np.sum(np.sqrt(RHOlk[:, int(UONIindex[t])] * NUlk[:, UOIindex])))**2
+        PUktheo = (M - Tau_p) * PUktheo0
+
+        # Calcul UIkttheo
+        UIkttheo0 = 0
+        for t in range(K):
+            UIkttheo0 += RHOlk[:, t] * (BETAlk[:, UOIindex] - NUlk[:, UOIindex])
+        UIkttheo = np.sum(UIkttheo0)
+
+        # Calcul final SINR
+        SINRktheo[k] = CPktheo / (PUktheo + UIkttheo + wp)
+
+        # Calcul de SE
+        SEkTheo[k] = xi * (1 - (Tau_p / Tau_c)) * np.log2(1 + SINRktheo[k])
     
+        print(f"Utilisateur {k}: SINR_theo = {SINRktheo[k]:.4f}, SE_theo = {SEkTheo[k]:.4f} bit/s/Hz")
+    performance_data1 = []
+
+    # Charger les données existantes si le fichier n’est pas vide
+    if os.path.exists("data_performance1_PZF.json") and os.path.getsize("data_performance1_PZF.json") > 0:
+        with open("data_performance1_PZF.json", "r", encoding="utf-8") as f:
+            try:
+                performance_data1 = json.load(f)
+            except json.JSONDecodeError:
+                print("⚠️ Le fichier data_performance1_PZF.json est corrompu. Il sera réinitialisé.")
+                performance_data1 = []
+
+    # Ajouter les nouvelles valeurs
+    for k in range(K):
+        performance_data1.append({
+            "Utilisateur": int(k),
+            "SINR_theo": float(SINRktheo[k]),
+            "SE_theo": float(SEkTheo[k])
+        })
+
+    # Réécriture du fichier avec les anciennes + nouvelles données
+    with open("data_performance1_PZF.json", "w", encoding="utf-8") as f:
+        json.dump(performance_data1, f, indent=4)
+
     ##########################################################
     # Simulation
     # Channels
@@ -522,16 +597,32 @@ for iNsnap in range(0,Nsnap):
         SINRksim0 = CPksim / (PUksim + UIktsim + wp)
         SINRksim = CPksim / (PUksim + UIktsim + HDrsim + HDssim + wp)#avec distorsion
 
+       
+        # Calcul des valeurs SE (comme dans ton code)
         SEksim0[kin, iNsnap] = xi * (1 - (Tau_p / Tau_c)) * np.log2(1 + SINRksim0)
-        SEksim[kin, iNsnap] = xi * (1 - (Tau_p / Tau_c)) * np.log2(1 + SINRksim)
+        SEksim[kin, iNsnap]  = xi * (1 - (Tau_p / Tau_c)) * np.log2(1 + SINRksim)
+        performance_data = []
 
-        # Ajouter les nouvelles données au fichier JSON
+        # Lire les anciennes données si elles existent et ne sont pas vides
+        if os.path.exists("data_performance_PZF.json") and os.path.getsize("data_performance_PZF.json") > 0:
+            with open("data_performance_PZF.json", "r", encoding="utf-8") as f:
+                performance_data = json.load(f)
+        else:
+            performance_data = []
+
+        # Ajouter les nouvelles données
         performance_data.append({
-            "kin": kin,
-            "SINRksim": SINRksim0,
-            "SEksim": SEksim0[kin, iNsnap]
+            "user": int(kin + 1),
+            "snapshot": int(iNsnap),
+            "SEksim0": float(SEksim0[kin, iNsnap]),
+            "SEksim": float(SEksim[kin, iNsnap]),
+            "SINRksim0": float(SINRksim0),
+            "SINRksim": float(SINRksim)
         })
 
+        # Sauvegarder les données mises à jour
+        with open("data_performance_PZF.json", "w", encoding="utf-8") as f:
+            json.dump(performance_data, f, indent=4)
         # Affichage corrigé des SINR et SE
         print(f"SINR PZF simulé de l'utilisateur (num={kin+1}): {SINRksim0:.4f}")
         print(f"SE PZF simulé de l'utilisateur (kin={kin+1}): {SEksim0[kin, iNsnap]:.4f}")
@@ -560,7 +651,7 @@ for iNsnap in range(0,Nsnap):
     plt.title('CDF of Spectral Efficiency (SE)')
     plt.xlabel('SE')
     plt.ylabel('CDF')
-    # plt.show()
+    plt.show()
 
     # # -----------------------------------------
     # # Second Part: Compute and plot PAPR CCDF
@@ -653,6 +744,7 @@ for iNsnap in range(0,Nsnap):
     plt.grid(True)
     plt.legend()
     plt.tight_layout()
+    plt.show()
 
 
 

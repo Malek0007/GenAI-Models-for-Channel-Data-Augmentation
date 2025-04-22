@@ -1,0 +1,402 @@
+[
+    {
+        "Utilisateur": 0,
+        "SINR_theo": 12819.954612964933,
+        "SE_theo": 6.498198126001991
+    },
+    {
+        "Utilisateur": 1,
+        "SINR_theo": 2330.8207481229056,
+        "SE_theo": 5.327257702150184
+    },
+    {
+        "Utilisateur": 2,
+        "SINR_theo": 28583.33843436891,
+        "SE_theo": 7.049017752373231
+    },
+    {
+        "Utilisateur": 3,
+        "SINR_theo": 64837.93918117134,
+        "SE_theo": 7.611701365195433
+    },
+    {
+        "Utilisateur": 4,
+        "SINR_theo": 5272.801887048761,
+        "SE_theo": 5.887917933969793
+    },
+    {
+        "Utilisateur": 5,
+        "SINR_theo": 38134.389899163936,
+        "SE_theo": 7.247068014098986
+    },
+    {
+        "Utilisateur": 6,
+        "SINR_theo": 1382.8939969631513,
+        "SE_theo": 4.968817964195139
+    },
+    {
+        "Utilisateur": 7,
+        "SINR_theo": 12599.899312443953,
+        "SE_theo": 6.486304324057606
+    },
+    {
+        "Utilisateur": 0,
+        "SINR_theo": 25458.537988829226,
+        "SE_theo": 6.9694850564824025
+    },
+    {
+        "Utilisateur": 1,
+        "SINR_theo": 2265.709044674353,
+        "SE_theo": 5.307801668065588
+    },
+    {
+        "Utilisateur": 2,
+        "SINR_theo": 17694.164015724025,
+        "SE_theo": 6.719555958882691
+    },
+    {
+        "Utilisateur": 3,
+        "SINR_theo": 41802.00881207956,
+        "SE_theo": 7.310151983317501
+    },
+    {
+        "Utilisateur": 4,
+        "SINR_theo": 30599.69115042587,
+        "SE_theo": 7.095846008427218
+    },
+    {
+        "Utilisateur": 5,
+        "SINR_theo": 37867.837948424625,
+        "SE_theo": 7.242249300281163
+    },
+    {
+        "Utilisateur": 6,
+        "SINR_theo": 1819.9405239152823,
+        "SE_theo": 5.157365755249877
+    },
+    {
+        "Utilisateur": 7,
+        "SINR_theo": 3116.3062359171263,
+        "SE_theo": 5.52670674911005
+    },
+    {
+        "Utilisateur": 0,
+        "SINR_theo": 14527.54478663045,
+        "SE_theo": 6.584096469529986
+    },
+    {
+        "Utilisateur": 1,
+        "SINR_theo": 12561.436593275226,
+        "SE_theo": 6.484204140050396
+    },
+    {
+        "Utilisateur": 2,
+        "SINR_theo": 32942.713092025486,
+        "SE_theo": 7.146531214383001
+    },
+    {
+        "Utilisateur": 3,
+        "SINR_theo": 100680.34552044682,
+        "SE_theo": 7.914017560270407
+    },
+    {
+        "Utilisateur": 4,
+        "SINR_theo": 17824.948090494003,
+        "SE_theo": 6.724614852098473
+    },
+    {
+        "Utilisateur": 5,
+        "SINR_theo": 70216.40735868971,
+        "SE_theo": 7.6664481466860845
+    },
+    {
+        "Utilisateur": 6,
+        "SINR_theo": 296.76494004730563,
+        "SE_theo": 3.9133476597184695
+    },
+    {
+        "Utilisateur": 7,
+        "SINR_theo": 3614.390705996804,
+        "SE_theo": 5.62854088029268
+    },
+    {
+        "Utilisateur": 0,
+        "SINR_theo": 4661.600377266789,
+        "SE_theo": 5.803294794739274
+    },
+    {
+        "Utilisateur": 1,
+        "SINR_theo": 6310.479320611957,
+        "SE_theo": 6.011315465055947
+    },
+    {
+        "Utilisateur": 2,
+        "SINR_theo": 35909.06323237558,
+        "SE_theo": 7.205762177585464
+    },
+    {
+        "Utilisateur": 3,
+        "SINR_theo": 40526.53604780838,
+        "SE_theo": 7.288864212421358
+    },
+    {
+        "Utilisateur": 4,
+        "SINR_theo": 17479.087958790526,
+        "SE_theo": 6.711154678078161
+    },
+    {
+        "Utilisateur": 5,
+        "SINR_theo": 96861.15273419526,
+        "SE_theo": 7.887450212542003
+    },
+    {
+        "Utilisateur": 6,
+        "SINR_theo": 371.7507672373082,
+        "SE_theo": 4.067651196096546
+    },
+    {
+        "Utilisateur": 7,
+        "SINR_theo": 3678.0997022644246,
+        "SE_theo": 5.640541456197077
+    },
+    {
+        "Utilisateur": 0,
+        "SINR_theo": 7172.114791722848,
+        "SE_theo": 6.099230477685734
+    },
+    {
+        "Utilisateur": 1,
+        "SINR_theo": 7855.612083534404,
+        "SE_theo": 6.161757911643949
+    },
+    {
+        "Utilisateur": 2,
+        "SINR_theo": 25583.44368358668,
+        "SE_theo": 6.972847258481504
+    },
+    {
+        "Utilisateur": 3,
+        "SINR_theo": 24064.453614139962,
+        "SE_theo": 6.930798093681625
+    },
+    {
+        "Utilisateur": 4,
+        "SINR_theo": 13567.630074997584,
+        "SE_theo": 6.537136880632377
+    },
+    {
+        "Utilisateur": 5,
+        "SINR_theo": 82444.63647537278,
+        "SE_theo": 7.776740723349889
+    },
+    {
+        "Utilisateur": 6,
+        "SINR_theo": 1608.1792276393548,
+        "SE_theo": 5.072433002184257
+    },
+    {
+        "Utilisateur": 7,
+        "SINR_theo": 1808.031986523246,
+        "SE_theo": 5.152858191408647
+    },
+    {
+        "Utilisateur": 0,
+        "SINR_theo": 18708.643630452232,
+        "SE_theo": 6.757854504209664
+    },
+    {
+        "Utilisateur": 1,
+        "SINR_theo": 2492.630064579184,
+        "SE_theo": 5.373348447033265
+    },
+    {
+        "Utilisateur": 2,
+        "SINR_theo": 22963.999697541756,
+        "SE_theo": 6.898642449574969
+    },
+    {
+        "Utilisateur": 3,
+        "SINR_theo": 9466.985784369279,
+        "SE_theo": 6.289924678387349
+    },
+    {
+        "Utilisateur": 4,
+        "SINR_theo": 18137.003991791327,
+        "SE_theo": 6.736537181835993
+    },
+    {
+        "Utilisateur": 5,
+        "SINR_theo": 39959.35791994441,
+        "SE_theo": 7.279181849893945
+    },
+    {
+        "Utilisateur": 6,
+        "SINR_theo": 286.47510255792326,
+        "SE_theo": 3.8891872396770393
+    },
+    {
+        "Utilisateur": 7,
+        "SINR_theo": 956.632319857509,
+        "SE_theo": 4.715870492135231
+    },
+    {
+        "Utilisateur": 0,
+        "SINR_theo": 37580.94824720068,
+        "SE_theo": 7.2370248750089
+    },
+    {
+        "Utilisateur": 1,
+        "SINR_theo": 4473.565926022961,
+        "SE_theo": 5.775015247220115
+    },
+    {
+        "Utilisateur": 2,
+        "SINR_theo": 39842.79610956878,
+        "SE_theo": 7.277174993323936
+    },
+    {
+        "Utilisateur": 3,
+        "SINR_theo": 35930.28278109566,
+        "SE_theo": 7.206168010190056
+    },
+    {
+        "Utilisateur": 4,
+        "SINR_theo": 12479.608421881794,
+        "SE_theo": 6.479714593308574
+    },
+    {
+        "Utilisateur": 5,
+        "SINR_theo": 130409.30852845658,
+        "SE_theo": 8.091761137647637
+    },
+    {
+        "Utilisateur": 6,
+        "SINR_theo": 306.86579465586715,
+        "SE_theo": 3.9362656075366744
+    },
+    {
+        "Utilisateur": 7,
+        "SINR_theo": 1294.036599343296,
+        "SE_theo": 4.923227216906845
+    },
+    {
+        "Utilisateur": 0,
+        "SINR_theo": 11323.031678010862,
+        "SE_theo": 6.412904795108322
+    },
+    {
+        "Utilisateur": 1,
+        "SINR_theo": 5849.803330056055,
+        "SE_theo": 5.95924714696503
+    },
+    {
+        "Utilisateur": 2,
+        "SINR_theo": 17703.83603167645,
+        "SE_theo": 6.719931362966051
+    },
+    {
+        "Utilisateur": 3,
+        "SINR_theo": 29661.67384764052,
+        "SE_theo": 7.074457633510358
+    },
+    {
+        "Utilisateur": 4,
+        "SINR_theo": 6307.544457444772,
+        "SE_theo": 6.010995934104653
+    },
+    {
+        "Utilisateur": 5,
+        "SINR_theo": 118977.02676857046,
+        "SE_theo": 8.02873125293841
+    },
+    {
+        "Utilisateur": 6,
+        "SINR_theo": 542.8794055984557,
+        "SE_theo": 4.327210946610768
+    },
+    {
+        "Utilisateur": 7,
+        "SINR_theo": 277.01002170475715,
+        "SE_theo": 3.86618718091862
+    },
+    {
+        "Utilisateur": 0,
+        "SINR_theo": 15672.315312683708,
+        "SE_theo": 6.636201313837168
+    },
+    {
+        "Utilisateur": 1,
+        "SINR_theo": 17406.146856202577,
+        "SE_theo": 6.708281968990683
+    },
+    {
+        "Utilisateur": 2,
+        "SINR_theo": 44034.562146145305,
+        "SE_theo": 7.345895934577439
+    },
+    {
+        "Utilisateur": 3,
+        "SINR_theo": 4518.108706473308,
+        "SE_theo": 5.781820259951626
+    },
+    {
+        "Utilisateur": 4,
+        "SINR_theo": 6655.448423735346,
+        "SE_theo": 6.047874719612431
+    },
+    {
+        "Utilisateur": 5,
+        "SINR_theo": 133189.3572147026,
+        "SE_theo": 8.106252434111893
+    },
+    {
+        "Utilisateur": 6,
+        "SINR_theo": 880.7387646120214,
+        "SE_theo": 4.6591464177509865
+    },
+    {
+        "Utilisateur": 7,
+        "SINR_theo": 580.9258020276434,
+        "SE_theo": 4.373662573802817
+    },
+    {
+        "Utilisateur": 0,
+        "SINR_theo": 16361.84030495448,
+        "SE_theo": 6.665778845892766
+    },
+    {
+        "Utilisateur": 1,
+        "SINR_theo": 9879.322567284336,
+        "SE_theo": 6.319210679784491
+    },
+    {
+        "Utilisateur": 2,
+        "SINR_theo": 7379.156871485599,
+        "SE_theo": 6.118778936656567
+    },
+    {
+        "Utilisateur": 3,
+        "SINR_theo": 7897.131562713199,
+        "SE_theo": 6.165378897275072
+    },
+    {
+        "Utilisateur": 4,
+        "SINR_theo": 27169.58849368629,
+        "SE_theo": 7.014170568139735
+    },
+    {
+        "Utilisateur": 5,
+        "SINR_theo": 52040.2465188609,
+        "SE_theo": 7.460651380093826
+    },
+    {
+        "Utilisateur": 6,
+        "SINR_theo": 2138.850877548222,
+        "SE_theo": 5.2682354980506485
+    },
+    {
+        "Utilisateur": 7,
+        "SINR_theo": 2001.9600272218581,
+        "SE_theo": 5.222818054498876
+    }
+]
