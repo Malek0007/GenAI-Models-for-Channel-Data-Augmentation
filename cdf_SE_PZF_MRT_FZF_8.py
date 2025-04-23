@@ -6,13 +6,13 @@ sns.set_theme(style="whitegrid")
 
 
 # Charger les fichiers
-with open("simulation_data_MRT.json") as f:
+with open("simulation_data_MRT_8.json") as f:
     mrt_data = json.load(f)
 
-with open("simulation_data_PZF.json") as f:
+with open("simulation_data_PZF_8.json") as f:
     pzf_data = json.load(f)
 
-with open("simulation_data_FZF.json") as f:
+with open("simulation_data_FZF_8.json") as f:
     fzf_data = json.load(f)
 
 # Extraire les SE simulés et théoriques
@@ -84,7 +84,7 @@ plt.text(np.median(x_fzf_sim), 0.4, 'Précodage : FZF', fontsize=12, color='medi
 # Personnalisation
 plt.xlabel("Spectral Efficiency (SE)", fontsize=14, fontweight='bold')
 plt.ylabel("Fonction de Répartition Cumulative (CDF)", fontsize=14, fontweight='bold')
-plt.title("CDF du SE (16 antennes) - Simulé vs Théorique", fontsize=16, fontweight='bold')
+plt.title("CDF du SE (8 antennes) - Simulé vs Théorique", fontsize=16, fontweight='bold')
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.grid(True, linestyle='--', alpha=0.7)
@@ -94,5 +94,5 @@ plt.legend(fontsize=12, frameon=True, loc="lower right", fancybox=True, framealp
 
 # Marge et sauvegarde
 plt.tight_layout()
-plt.savefig("cdf_precodage_M16.png", dpi=300)
+plt.savefig("cdf_precodage_M8.png", dpi=300)
 plt.show()
