@@ -84,7 +84,7 @@ plt.text(np.median(x_fzf_sim), 0.4, 'Précodage : FZF', fontsize=12, color='medi
 # Personnalisation
 plt.xlabel("Spectral Efficiency (SE)", fontsize=14, fontweight='bold')
 plt.ylabel("Fonction de Répartition Cumulative (CDF)", fontsize=14, fontweight='bold')
-plt.title("CDF du SE (4 antennes) - Simulé vs Théorique", fontsize=16, fontweight='bold')
+plt.title("CDF du SE (8 antennes) - Simulé vs Théorique", fontsize=16, fontweight='bold')
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.grid(True, linestyle='--', alpha=0.7)
@@ -94,5 +94,5 @@ plt.legend(fontsize=12, frameon=True, loc="lower right", fancybox=True, framealp
 
 # Marge et sauvegarde
 plt.tight_layout()
-plt.savefig("cdf_precodage_M4.png", dpi=300)
+plt.savefig("cdf_precodage_M8.png", dpi=300)
 plt.show()
