@@ -158,7 +158,7 @@ modulation_type = "qam"
 nuTh1 = 1
 #  ------  Topologie & DL/UL ressouces
 L = 52
-M = 8
+M = 16
 K = 8
 Tau_p = 8
 Tau_c = 168
@@ -337,7 +337,7 @@ for UOIindex in range(0,8):
         svg_realHFreq3 = np.zeros((Nreal,M,K,L,Mfft),dtype=complex)
         for iNreal in range(0,Nreal):  
         
-            matrix_path = os.path.join(os.path.dirname(__file__), 'matrix_8_8_52_818.npy')
+            matrix_path = os.path.join(os.path.dirname(__file__), 'matrix_16_8_52_818.npy')
 
 
             H3 = np.load(matrix_path)  # Shape (4, 8, 52, 818)
@@ -448,7 +448,7 @@ for UOIindex in range(0,8):
         }
 
         # Nom du fichier JSON
-        file_name = "matrix_8_8_52_818/performance_4_8_52_818.json"
+        file_name = "matrix_16_8_52_818/performance_16_8_52_818.json"
 
         # Lire les anciennes données du fichier, si elles existent
         try:
